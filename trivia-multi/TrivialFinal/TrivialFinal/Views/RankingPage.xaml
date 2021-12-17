@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrivialFinal.Views.RankingPage"
+             Title="Ranking">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="TOP 10 PLAYERS" 
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="18"
+                   Margin="5" />
+
+            <Label x:Name="NotFound"
+                   Text="Nothing here yet"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="16"
+                   IsVisible="false" />
+
+            <ListView x:Name="PlayersList" CachingStrategy="RecycleElement" ItemsSource="{Binding Items}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                                <Label Text="{Binding Points}"
+                                       VerticalOptions="CenterAndExpand" 
+                                       FontSize="20"
+                                       FontAttributes="Bold"
+                                       Margin="10, 0, 10, 0" />
+
+                                <Label Text="{Binding Nickname}"
+                                       VerticalOptions="CenterAndExpand" 
+                                       FontSize="20" />
+
+                                <Label Text="{Binding LastPlay}"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="EndAndExpand"
+                                       FontSize="14" 
+                                       Margin="10, 0, 10, 0"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

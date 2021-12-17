@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrivialFinal.MainPage"
+             Title="Trivial">
+
+    <StackLayout Padding="20">
+        
+        <!--
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Trivial" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        -->
+
+        <Entry Placeholder="Insert your nickname" 
+               Completed="OnNicknameCompleted" 
+               x:Name="NicknameEntry"/>
+
+        <Button Text="Start new game" Clicked="OnStartNewGameClicked" />
+        <Button Text="Show Ranking" Clicked="OnShowRankingClicked" />
+        <Button Text="Exit" Clicked="OnExitClicked" />
+        
+    </StackLayout>
+
+</ContentPage>

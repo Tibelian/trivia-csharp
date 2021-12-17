@@ -1,0 +1,14 @@
+C:\vsprojects\Trivial\Trivial\bin\Debug\Trivial.exe.config
+C:\vsprojects\Trivial\Trivial\bin\Debug\Trivial.exe
+C:\vsprojects\Trivial\Trivial\bin\Debug\Trivial.pdb
+C:\vsprojects\Trivial\Trivial\obj\Debug\Trivial.csproj.AssemblyReference.cache
+C:\vsprojects\Trivial\Trivial\obj\Debug\Trivial.csproj.CoreCompileInputs.cache
+C:\vsprojects\Trivial\Trivial\obj\Debug\Trivial.exe
+C:\vsprojects\Trivial\Trivial\obj\Debug\Trivial.pdb
+C:\Users\iulia\Desktop\Trivial\Trivial\bin\Debug\Trivial.exe.config
+C:\Users\iulia\Desktop\Trivial\Trivial\bin\Debug\Trivial.exe
+C:\Users\iulia\Desktop\Trivial\Trivial\bin\Debug\Trivial.pdb
+C:\Users\iulia\Desktop\Trivial\Trivial\obj\Debug\Trivial.csproj.AssemblyReference.cache
+C:\Users\iulia\Desktop\Trivial\Trivial\obj\Debug\Trivial.csproj.CoreCompileInputs.cache
+C:\Users\iulia\Desktop\Trivial\Trivial\obj\Debug\Trivial.exe
+C:\Users\iulia\Desktop\Trivial\Trivial\obj\Debug\Trivial.pdb

@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\game_over.mp3" />
+    <None Remove="Data\right.mp3" />
+    <None Remove="Data\sound_background.mp3" />
+    <None Remove="Data\sound_fail.mp3" />
+    <None Remove="Data\sound_game_over.mp3" />
+    <None Remove="Data\sound_success.mp3" />
+    <None Remove="Data\wrong.mp3" />
+    <None Remove="questions.csv" />
+    <None Remove="ranking.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.5.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\questions.csv" />
+    <EmbeddedResource Include="Data\sound_background.mp3" />
+    <EmbeddedResource Include="Data\sound_fail.mp3" />
+    <EmbeddedResource Include="Data\sound_game_over.mp3" />
+    <EmbeddedResource Include="Data\sound_success.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\StartNewGamePage.xaml.cs">
+      <DependentUpon>StartNewGamePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\GamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RankingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\StartNewGamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
